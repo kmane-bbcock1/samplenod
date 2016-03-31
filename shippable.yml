@@ -29,8 +29,8 @@ build:
 
   ci:
     - node --version  
-    - ps -eax   
-    - ls -al 
+   # - ps -eax   
+    #- ls -al 
 
   post_ci:
     - docker build -t=shippabledocker/pipeline:$BRANCH.$BUILD_NUMBER .
